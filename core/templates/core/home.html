@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="mt-5">
+        <div class="text-center">
+            <img src="{% static 'core/images/chhabi.jpg' %}" class="img-fluid img-thumbnail"  alt="ProfilePic" width="250px" height="150px">
+
+        </div>
+        <div class="mt-5 text-white mx-5 text-justify">
+            <h1 class="font-weight-bold st-font">Hello there!</h1>
+            <div class="px-4" style="line-height:2rem;">
+                <p style="text-indent: 100px;"> I am <b class="text-warning">Chhabi Acharya</b>, and I will complete my bachelor's degree in  <b class="text-warning">Computer Science</b> from Purwanchal Campus, IOE, TU in 2025.
+                </p>
+                <p>
+                    I love the beauty of my life and acknowledge it. Sometimes I like to read books that have answers to my questions. 
+                </p>
+                <p>
+                    My biggest life achievement is <b class="text-warning">control over my anger.</b>
+                </p>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="#" class="btn btn-outline-warning mr-5 my-3">Hire Me</a>
+            <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>    
+        </div>
+
+    </div>
+{% endblock content %}
